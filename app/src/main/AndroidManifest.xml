@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.petermiklosko.rssreader"
+  android:versionCode="1623001"
+  android:versionName="0.0.1">
+
+  <!-- versionCode scheme http://develoblishing/multiple-apks.html#VersionCodes -->
+
+  <uses-sdk
+    android:minSdkVersion="16"
+    android:targetSdkVersion="17" />
+
+    <!--android:icon="@drawable/ic_launcher"
+    android:theme="@style/AppTheme"         -->
+  <application
+    android:name=".ExposureApplication"
+    android:allowBackup="true"
+    android:label="@string/app_name"
+    >
+
+    <activity
+      android:name=".RSSActivity"
+      android:label="@string/app_name"
+      android:excludeFromRecents="true"
+      android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.MONKEY" />
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>

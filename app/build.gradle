@@ -1,0 +1,16 @@
+apply plugin: 'android'
+project.archivesBaseName = 'com.petermiklosko.rssreader'
+
+dependencies {
+    compile project(':core')
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion '18.1.0'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 16
+    }
+}
