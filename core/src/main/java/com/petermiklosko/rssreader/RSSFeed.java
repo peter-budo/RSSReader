@@ -7,11 +7,7 @@ import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
 @Root(name="channel")
-public class RSSFeed {
-    @Element(name="title")
-    private String title;
-    @Element(name = "link")
-    private String linkUrl;
+public class RSSFeed extends RSSItem {
     @Element(name = "description")
     private String description;
     @Element(name = "language")
@@ -28,14 +24,6 @@ public class RSSFeed {
     private FeedImage feedImage;
     @ElementList(inline=true)
     private List<FeedEntry> feedList;
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getLinkUrl() {
-        return linkUrl;
-    }
 
     public String getDescription() {
         return description;
