@@ -1,10 +1,12 @@
-package com.petermiklosko.rssreader;
+package com.petermiklosko.rssreader.connection;
+
+import com.petermiklosko.rssreader.RSSRoot;
 
 public enum Result {
     SUCCESS, FAILURE, ERROR, NETWORK_FAILURE("network error"), CANCELLED("cancelled");
 
     private String message = "";
-    private int statusCode;
+    private RSSRoot feeds;
 
     private Result(String message) {
         this.message = message;
@@ -21,11 +23,11 @@ public enum Result {
         return message;
     }
 
-    public void setStatusCode(int statusCode) {
-        this.statusCode = statusCode;
+    public RSSRoot getFeeds() {
+        return feeds;
     }
 
-    public int getStatusCode() {
-        return statusCode;
+    public void setFeeds(RSSRoot feeds) {
+        this.feeds = feeds;
     }
 }

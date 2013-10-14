@@ -4,7 +4,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @Root(name = "image", strict = false)
-public class FeedImage extends RSSItem {
+public class FeedImage extends FeedItem {
 
     @Element(name = "url")
     private String url;

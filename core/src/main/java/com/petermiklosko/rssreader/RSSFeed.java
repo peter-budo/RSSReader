@@ -7,7 +7,7 @@ import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
 @Root(name="channel")
-public class RSSFeed extends RSSItem {
+public class RSSFeed extends FeedItem {
     @Element(name = "description")
     private String description;
     @Element(name = "language")

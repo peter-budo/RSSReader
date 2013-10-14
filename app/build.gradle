@@ -4,6 +4,7 @@ project.archivesBaseName = 'com.petermiklosko.rssreader'
 dependencies {
     compile project(':core')
     compile 'com.android.support:support-v4:13.0.0'
+    compile 'com.github.kevinsawicki:http-request:5.4.1'
 }
 
 android {

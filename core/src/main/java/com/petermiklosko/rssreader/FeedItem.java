@@ -3,14 +3,10 @@ package com.petermiklosko.rssreader;
 import org.simpleframework.xml.Element;
 
 public class FeedItem {
-    @Element
-    private final String title;
-    private final String link;
-
-    public FeedItem(String title, String link) {
-        this.title = title;
-        this.link = link;
-    }
+    @Element(name = "title")
+    private String title;
+    @Element(name = "link")
+    private String link;
 
     public String getTitle() {
         return title;
