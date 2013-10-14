@@ -4,17 +4,32 @@
   android:layout_height="match_parent"
   android:orientation="vertical">
 
+  <TextView
+    android:id="@+id/header_title"
+    style="@style/TextView.Header" />
+
+  <ImageView
+    android:id="@+id/header_image"
+    style="@style/ImageView"
+    android:layout_below="@id/header_title" />
+
   <ListView
     android:id="@+id/feeds_list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    />
+    android:layout_below="@id/header_image" />
 
   <TextView
-    android:id="@android:id/empty"
+    android:id="@+id/error_message"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="No feeds found"
     android:layout_centerInParent="true"
-    />
-  </RelativeLayout>
+    android:visibility="invisible" />
+
+  <ProgressBar
+    android:id="@+id/empty_view_progress_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"
+    android:layout_centerInParent="true" />
+</RelativeLayout>

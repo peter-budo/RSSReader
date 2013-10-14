@@ -6,26 +6,29 @@
 
   <ImageView
     android:id="@+id/feed_icon"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    style="@style/ImageView"
     android:src="@drawable/feed_icon"
+    android:contentDescription="@string/cnt_feed_image"
     />
-  <TextView
-    android:id="@+id/track_name"
+
+  <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_toRightOf="@id/feed_icon"
+    >
+  <TextView
+    android:id="@+id/track_name"
+    style="@style/TextView.Header"
     />
   <TextView
     android:id="@+id/track_artist"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    style="@style/TextView"
     android:layout_below="@id/track_name"
     />
   <TextView
     android:id="@+id/publish_date"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    style="@style/TextView.Note"
     android:layout_below="@id/track_artist"
     />
+  </RelativeLayout>
 </RelativeLayout>

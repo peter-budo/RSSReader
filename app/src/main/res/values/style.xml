@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <style name="TextView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/text_m</item>
+  </style>
+
+  <style name="TextView.Header">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextView.Note">
+    <item name="android:textSize">@dimen/text_s</item>
+    <item name="android:textStyle">italic</item>
+  </style>
+
+  <style name="ImageView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">@dimen/padding_m</item>
+  </style>
 </resources>
